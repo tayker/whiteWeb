@@ -1,0 +1,180 @@
+.container{
+    max-width: 755px;
+    margin: auto;
+}
+.content-wrapper{
+    margin: auto;
+    max-width: 755px;
+    margin-top: 8px;
+}
+.header{
+    .container{
+        text-align: center;
+        position: relative;
+        .logo{
+            text-decoration: none;
+            display: block;
+            max-width: 400px;
+            margin: auto;
+            
+            img{
+                width: 100%;
+            }
+        }
+        .button{
+            background: none;
+            border: none;
+            z-index: 99;
+            cursor: pointer;
+            padding:0 15px;
+            transition: 0.3s;
+            outline: none;
+            display: none;
+            .icon{
+                font-size: 30px;
+            }
+            &:hover{
+                color: rgb(134, 150, 204);
+            }
+        }
+        .menu{
+            padding: 0;
+            margin: 6px 0 0 0;
+            font-size: 0;
+            background-color: #fff;
+            &__item{
+                display: inline-block;
+                border: 1px solid #999;
+                position: relative;
+                border-bottom: 3px solid #9dc5f0;
+                &:not(:last-child){
+                    border-right: 0;
+                }
+                .link{
+                    display: block;
+                    padding: 0 29.8px;
+                }
+                .drop-list{
+                    position: absolute;
+                    opacity: 0;
+                    left: -9999px;
+                    transition: 0.3s opacity;
+                    border: 1px solid rgb(134, 150, 204);
+                    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.37);
+                    padding: 0;
+                    background-color: #fff;
+                    z-index: 2;
+                    width: 100%;
+                    &__item{
+                        padding: 0 16px;
+                        .link{
+                            padding: 0;
+                            text-align: left;
+                        }
+                        &:not(:last-child){
+                            .link{
+                                border-bottom: 1px solid #ebf3fc;
+                            }
+                        }
+                    }
+                }
+                &:hover{
+                    box-shadow: inset 0px -1px #9dc5f0;
+                    .drop-list{
+                        left: 0;
+                        top: calc(100% + 3px);
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+.main{
+    .container{
+        .slider{
+            width: 755px;
+            &__item{
+                width: 755px;
+                margin: 0;
+                img{
+                    width: 755px;
+                    height: 317px;
+                }
+            }
+        }
+        .menu{
+            padding: 0 0 0 70px;
+            margin: 0;
+            border-top: 3px solid #9dc5f0;
+            background-color: #fff;
+            &__item{
+                display: inline-block;
+                transition: 0.3s;
+                &:not(:last-child){
+                    margin-right: 50px;
+                }
+                &:hover{
+                    box-shadow: inset 0px 1px #9dc5f0;
+                }
+            }
+        }
+    }
+}
+.section{
+    display: inline-block;
+    max-width: 480px;
+    background-color: #fff;
+    .container{
+        padding: 34px 30px 70px 30px;
+        font-size: 12px;
+        .description{
+            &__item{
+                line-height: 1.4;
+                
+                &:nth-child(2){
+                    margin-top: 20px;
+                }
+                &:nth-child(3){
+                    margin-top: 26px;
+                }
+                &:nth-child(4){
+                    margin-top: 38px;
+                }
+            }
+        }
+    }
+}
+.aside{
+    display: inline-block;
+    max-width: 264px;
+    vertical-align: top;
+    background-color: #fff;
+    margin-left: 6px;
+    .container{
+        padding: 34px 12px 180px 30px;
+        
+        .description{
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 1.5;
+            &__item{
+                &:nth-child(2){
+                    margin-top: 16px;
+                }
+            }
+        }
+    }
+}
+.footer{
+    .container{
+        margin-top: 14px;
+        .copyright{
+            font-size: 12px;
+            color: rgba(95, 93, 103, 0.502);
+            line-height: 1.5;
+            text-align: left;
+
+        }
+    }
+}
