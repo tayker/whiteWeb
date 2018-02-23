@@ -47,9 +47,11 @@
             padding: 0;
             margin: 6px auto 0 auto;
             font-size: 0;
+            letter-spacing: 0;
             background: #fff;
             box-shadow: 0 0 1px #fafafa;
             white-space: nowrap;
+            display: table;
             >li{
                 display: inline-block;
                 position: relative;
